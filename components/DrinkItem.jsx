@@ -83,7 +83,7 @@ const DrinkItem = ({
               strokeWidth="2"
             />
           </button>
-          <span className="text-center">Delete</span>
+          <label className="text-center">Delete</label>
         </div>
       </div>
 
