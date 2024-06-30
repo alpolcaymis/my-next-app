@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import {
   XCircleIcon,
   PlusCircleIcon,
@@ -12,7 +13,6 @@ const DrinkItem = ({
   handleDeleteDrink,
   handleTypeChange,
 }) => {
-  // Increment and decrement functions for the drink attributes with specified step values
   const increment = (field, step) => {
     const newValue = (Number(drink[field]) || 0) + step;
     handleInputChange(drink.id, field, newValue);
@@ -37,7 +37,7 @@ const DrinkItem = ({
                 value={drink.type}
                 onChange={(e) => handleTypeChange(drink.id, e.target.value)}
                 required
-                className="w-full p-2 text-base rounded border border-gray-500 bg-[#869999] text-[#142020] appearance-none focus:border-blue-500 focus:outline-none"
+                className="w-full p-2 text-base rounded border border-gray-500 bg-[#a0b3b3] text-[#142020] appearance-none focus:border-blue-500 focus:outline-none"
               >
                 <option value="beer">Bira</option>
                 <option value="wine">Şarap</option>
@@ -49,7 +49,7 @@ const DrinkItem = ({
                 </option>
                 <option value="raki">Rakı</option>
                 <option value="duble-raki">Duble Rakı</option>
-                <option value="jager-shot">Jägermeister Shot</option>
+                <option value="jager-shot">Jager Shot</option>
                 <option value="tekila-shot">Tekila Shot</option>
               </select>
               <div className="absolute inset-y-0 right-0 flex items-center px-2 pointer-events-none">
@@ -83,17 +83,20 @@ const DrinkItem = ({
               strokeWidth="2"
             />
           </button>
-          <label className="text-center">Delete</label>
+          <span className="text-center">Delete</span>
         </div>
       </div>
 
       <div className="flex items-center mt-2">
         <div className="flex-grow mr-6 max-h-[180px] flex items-center justify-center">
           <div className="max-h-[180px]">
-            <img
+            <Image
               src={drinkTypeIcons[drink.type].props.src}
               alt={drinkTypeIcons[drink.type].props.alt}
               className="max-h-[180px]"
+              width={180}
+              height={180}
+              objectFit="contain"
             />
           </div>
         </div>{" "}

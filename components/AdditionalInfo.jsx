@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 import TimeIcon4 from "../public/assets/time4.svg";
 const AdditionalInfo = ({ hoursPassed, setHoursPassed }) => (
   <fieldset className="additional-section my-4 border">
     <legend className="text-center  px-5">
       <div className="flex justify-center items-center gap-1">
         Alkol Alma Süresi
-        <img src={TimeIcon4} alt="timeicon" className="w-10 border-none" />
+        <Image src={TimeIcon4} alt="timeicon" className="w-10 border-none" />
       </div>
     </legend>
     <div className="flex flex-wrap justify-center text-center">

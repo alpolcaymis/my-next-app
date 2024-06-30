@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import Image from "next/image";
 import PhysicalAttributes from "./PhysicalAttributes";
 import DrinkList from "./DrinkList";
 import AdditionalInfo from "./AdditionalInfo";
@@ -85,14 +86,24 @@ const MainComponent = () => {
   };
 
   const drinkTypeIcons = {
-    beer: <img src={BeerIcon} alt="Beer Icon" />,
-    wine: <img src={WineIcon} alt="Wine Icon" />,
-    distilled: <img src={VodkaIcon} alt="Distilled Icon" />,
-    liqueurs: <img src={Jager3} alt="Liqueurs Icon" />,
-    raki: <img src={Raki} alt="Raki Icon" />, // Add icon for raki
-    "duble-raki": <img src={Raki} alt="Duble Raki Icon" />, // Add icon for duble raki
-    "jager-shot": <img src={Jagershot} alt="Jager Shot Icon" />, // Add icon for jager shot
-    "tekila-shot": <img src={Tekilashot} alt="Tekila Shot Icon" />, // Add icon for tekila shot
+    beer: <Image src={BeerIcon} alt="Beer Icon" width={180} height={180} />,
+    wine: <Image src={WineIcon} alt="Wine Icon" width={180} height={180} />,
+    distilled: (
+      <Image src={VodkaIcon} alt="Distilled Icon" width={180} height={180} />
+    ),
+    liqueurs: (
+      <Image src={Jager3} alt="Liqueurs Icon" width={180} height={180} />
+    ),
+    raki: <Image src={Raki} alt="Raki Icon" width={180} height={180} />,
+    "duble-raki": (
+      <Image src={Raki} alt="Duble Raki Icon" width={180} height={180} />
+    ),
+    "jager-shot": (
+      <Image src={Jagershot} alt="Jager Shot Icon" width={180} height={180} />
+    ),
+    "tekila-shot": (
+      <Image src={Tekilashot} alt="Tekila Shot Icon" width={180} height={180} />
+    ),
   };
 
   const handleSubmit = (e) => {
