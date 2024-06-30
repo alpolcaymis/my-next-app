@@ -13,6 +13,8 @@ import VodkaIcon from "../public/assets/vodka.svg";
 import Raki from "../public/assets/raki.png";
 import Jagershot from "../public/assets/jagershot.png";
 import Tekilashot from "../public/assets/tekilashot.png";
+import Header from "./Header";
+import FlowBanner from "./FlowBanner";
 
 const generateCustomId = () => {
   const timestamp = new Date().getTime();
@@ -254,6 +256,8 @@ const MainComponent = () => {
 
   return (
     <div>
+      <FlowBanner />
+      <Header />
       <form
         className="w-11/12 max-w-xl mx-auto my-8 mt-4 p-8 pt-6 rounded-lg shadow-lg bg-gradient-to-b from-[#253c3c] to-[#1d4949]"
         onSubmit={handleSubmit}
