@@ -312,10 +312,10 @@ const MainComponent = () => {
       </form>
       <footer>
         <p className="text-[0.4rem] text-center text-black uppercase">
-          ("Bu ölçümler veri bazlı tahminlere dayanmaktadır ve herhangi bir
+          Bu ölçümler veri bazlı tahminlere dayanmaktadır ve herhangi bir
           kesinlik teşkil etmemektedir. Buradaki verilere göre hareket ederek,
           kendinizin ve etrafınızdakilerin can güvenliğini tehlikeye atmayınız
-          ❗")
+          ❗
         </p>
       </footer>
     </div>
