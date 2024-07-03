@@ -237,7 +237,7 @@ const MainComponent = () => {
             />
           </svg>
         ),
-        backgroundColor: " #806000",
+        backgroundColor: "#806000",
         color: "white",
       };
     } else {

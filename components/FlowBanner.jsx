@@ -18,7 +18,7 @@ export default function FlowBanner() {
           <em> 🚨 0,20 promilin </em> üstünde ise: ehliyetine süresiz el konur.
         </span>
         <span>
-          <i> 2024'de </i> <em> alkolmetre üflememe </em> cezası olarak
+          <i> 2024&apos;de </i> <em> alkolmetre üflememe </em> cezası olarak
           <i> 18.452 TL </i>
           idari para cezası ödemeniz gerekir ayrıca ehliyetinize de{" "}
           <em>2 yıl</em> süreyle el konulur.
